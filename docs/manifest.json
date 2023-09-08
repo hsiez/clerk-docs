@@ -115,12 +115,14 @@
       ["<CreateOrganization/>", "/components/organization/create-organization"],
       ["<OrganizationProfile/>", "/components/organization/organization-profile"],
       ["<OrganizationSwitcher/>", "/components/organization/organization-switcher"],
+      ["<OrganizationList/>", "/components/organization/organization-list"],
       "# Building custom flows",
       ["Using metadata", "/organizations/metadata"],
       ["Creating orgs", "/organizations/creating-organizations"],
       ["Inviting users", "/organizations/inviting-users"],
       ["Managing roles", "/organizations/managing-roles"],
-      ["Managing multiple orgs", "/organizations/multiple-orgs"]
+      ["Managing multiple orgs", "/organizations/multiple-orgs"],
+      ["Verified domains", "/organizations/verified-domains"]
     ]
   ],
   [
@@ -194,6 +196,10 @@
       [
         "<OrganizationSwitcher/>",
         "/components/organization/organization-switcher"
+      ],
+      [
+        "<OrganizationList/>",
+        "/components/organization/organization-list"
       ],
 
       "# Customization",
