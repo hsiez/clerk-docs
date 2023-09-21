@@ -1,20 +1,16 @@
 ---
 title: useAuth()
-description: The `useAuth` hook is a convenient way to access the current auth state. This hook provides the minimal information needed for data-loading and helper methods to manage the current active session.
+description: The useAuth hook is a convenient way to access the current auth state. This hook provides the minimal information needed for data-loading and helper methods to manage the current active session.
 ---
-
-import { Callout } from "nextra-theme-docs";
-import { Tables } from "@/components/Table";
-import { CodeBlockTabs } from "@/components/CodeBlockTabs";
 
 # `useAuth()`
 
-The `useAuth` hook is a convenient way to access the current auth state. This hook provides the minimal information needed for data-loading and helper methods to manage the current active session.
+The `useAuth()` hook is a convenient way to access the current auth state. This hook provides the minimal information needed for data-loading and helper methods to manage the current active session.
 
 ## Usage
 
 <CodeBlockTabs options={["Next.js", "React"]}>
-  ```tsx copy filename="pages/index.tsx"
+  ```tsx filename="pages/index.tsx"
   import { useAuth } from '@clerk/nextjs';
 
   export default function ExternalDataPage() {
@@ -36,7 +32,7 @@ The `useAuth` hook is a convenient way to access the current auth state. This ho
 
   ```
 
-  ```tsx copy filename="external-data-page.tsx"
+  ```tsx filename="external-data-page.tsx"
   import { useAuth } from '@clerk/clerk-react';
 
   export default function ExternalDataPage() {
@@ -87,7 +83,7 @@ The `useAuth` hook is a convenient way to access the current auth state. This ho
     {
       cells: [
         "getToken",
-        "A function that returns a promise that resolves to the current user's session token, can also be used to retrieve a custom JWT template",
+        "A function that returns a promise that resolves to the current user's session token. Can also be used to retrieve a custom JWT template.",
       ],
     },
     {
